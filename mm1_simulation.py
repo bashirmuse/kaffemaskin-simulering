@@ -3,9 +3,9 @@ import random
 import statistics
 
 RANDOM_SEED = 42
-MU = 2.0  # service rate (kunder per minut), medelservicetid = 0.5 min
-SIM_TIME = 480  # minuter, t.ex. 8 timmar
-LAMBDA_VALUES = [0.5, 1.0, 1.5, 1.8]  # ankomsttakter (kunder per minut)
+MU = 2.0  
+SIM_TIME = 480  
+LAMBDA_VALUES = [0.5, 1.0, 1.5, 1.8]  
 
 
 def customer(env, name, server, mu, waiting_times, busy_time_tracker):
@@ -56,3 +56,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
